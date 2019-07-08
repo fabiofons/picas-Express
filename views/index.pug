@@ -1,0 +1,11 @@
+html
+  head
+    title Vista con Pug
+  body   
+    form(action="/",method="post")
+        input(type="text",name="number")
+        button(type="submit") Enviar
+    
+    if number
+      p   Numero - Resultado
+      p #{number} - #{result}
